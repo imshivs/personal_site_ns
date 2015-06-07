@@ -1,13 +1,24 @@
+Skip to content
+This repository  
+Explore
+Gist
+Blog
+Help
+@imshivs imshivs
+ 
+ Unwatch 1
+  Star 0
+ Fork 0imshivs/personal_site_ns
+ branch: master  personal_site_ns/css/main.css
+@imshivsimshivs 2 days ago responsiveness
+1 contributor
+RawBlameHistory     Executable File  2927 lines (2568 sloc)  76.179 kB
                  /*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license
-
 Copyright (c) 2013 Daniel Eden
-
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 .animated, * {
@@ -2530,6 +2541,42 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -webkit-animation-name: zoomOutUp;
   animation-name: zoomOutUp; }
 
+
+  .blink_me {
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-moz-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
 html, body {
   height: 100%;
   width: 100%;
@@ -2586,6 +2633,12 @@ a {
 /*  width: 95%;
   margin: 0px auto;
   color: #232323; }*/}
+
+    #brucewillis i {
+    margin-left: 45vw;
+    font-size: 5vw;
+    color: #CEAC41
+  }
   #brucewillis header {
         position: relative;
   padding: 1vw 0vw 0vw 2vw;
@@ -2629,6 +2682,12 @@ a {
     height:50vw;
 
 }
+
+   #social #chevron {
+    margin-left: 1.5vw;
+    font-size: 5vw;
+    color: white;
+  }
 #social img{
   width: 25vw;
   padding-top: 2vw;
@@ -2924,3 +2983,5 @@ a.archive {
       letter-spacing: 0;
       margin: 3px auto 0 auto;
       letter-spacing: 0; } }
+Status API Training Shop Blog About
+© 2015 GitHub, Inc. Terms Privacy Security Contact
